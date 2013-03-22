@@ -18,4 +18,4 @@
 			redirect.tpl				list of available agents to redirect thread to
 			redirected.tpl				successfully redirected
 			
-	
+	Dette er en test
