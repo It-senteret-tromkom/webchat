@@ -35,7 +35,7 @@ $webim_encoding = "utf-8";
 $mysqlhost = "localhost";
 $mysqldb = "webim";
 $mysqllogin = "webim";
-$mysqlpass = "y7TBQe7JmXFCKjf3";
+$mysqlpass = "";
 $mysqlprefix = "";
 
 $dbencoding = "utf8";
