@@ -17,4 +17,5 @@
 			error.tpl					page to report serious problems
 			redirect.tpl				list of available agents to redirect thread to
 			redirected.tpl				successfully redirected
-			
+
+			Mer test
