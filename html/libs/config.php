@@ -35,7 +35,7 @@ $webim_encoding = "utf-8";
 $mysqlhost = "localhost";
 $mysqldb = "webim";
 $mysqllogin = "webim";
-$mysqlpass = "ikke lagre noe passord på git";
+$mysqlpass = "y7TBQe7JmXFCKjf3";
 $mysqlprefix = "";
 
 $dbencoding = "utf8";
