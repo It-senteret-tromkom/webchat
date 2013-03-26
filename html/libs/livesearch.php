@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("links.xml");
+$xmlDoc->load("/webim/data/ldap_users.xml");
 
 $x=$xmlDoc->getElementsByTagName('link');
 
@@ -43,7 +43,7 @@ for($i=0; $i<($x->length); $i++)
 // or to the correct values
 if ($hint=="")
   {
-  $response="no suggestion";
+  $response="Nadalada";
   }
 else
   {

@@ -122,7 +122,10 @@ ${endif:groups}
 
 			<tr>
 				<td class="text">${msg:presurvey.name}</td>
-				<td><input type="text" name="name" size="50" value="${form:name}" class="username" onkeyup="showResult(${webimroot}/libs/,this.value)" ${ifnot:showname}disabled="disabled"${endif:showname}/></td>
+				<td>
+					<input type="text" name="name" size="50" class="username" onkeyup="showResult(this.value)" ${ifnot:showname}disabled="disabled"${endif:showname}/>
+					<div id="livesearch"></div>
+				</td>
 			</tr>
 
 ${if:showemail}
