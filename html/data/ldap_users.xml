@@ -1,4 +1,4 @@
-<pages>
+<tromkom>
 	<user>
 		<username>test</username>
 		<email>test@email.mail</email>
@@ -11,4 +11,12 @@
 		<username>test3</username>
 		<email>test3@email.mail</email>
 	</user>
-</pages>
+	<user>
+        <username>mertest</username>
+        <email>mertest@email.mail</email>
+    </user>
+    <user>
+        <username>mertest2</username>
+        <email>mertest2@email.mail</email>
+    </user>
+</tromkom>

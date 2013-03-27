@@ -126,8 +126,7 @@ ${endif:groups}
 			<tr>
 				<td class="text">${msg:presurvey.name}</td>
 				<td>
-					<input id="livesearch" type="text" name="name" size="50" class="username"  ${ifnot:showname}disabled="disabled"${endif:showname}/>
-					<div></div>
+					<input id="livesearch" type="text" name="name" size="50" class="username" ${ifnot:showname}disabled="disabled"${endif:showname}/>
 				</td>
 			</tr>
 
