@@ -4,6 +4,9 @@
 <title>${msg:presurvey.title}</title>
 <link rel="shortcut icon" href="${webimroot}/images/favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="${tplroot}/chat.css" />
+<link rel="stylesheet" type="text/css" href="${webimroot}/js/jquery-ui-1.10.2/css/ui-lightness/jquery-ui-1.10.2.custom.css" />
+<script type="text/javascript" language="javascript" src="${webimroot}/js/${jsver}/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="${webimroot}/js/jquery-ui-1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
 <script type="text/javascript" language="javascript" src="${webimroot}/js/${jsver}/livesearch.js"></script>
 <style type="text/css">
 #header{
@@ -123,8 +126,8 @@ ${endif:groups}
 			<tr>
 				<td class="text">${msg:presurvey.name}</td>
 				<td>
-					<input type="text" name="name" size="50" class="username" onkeyup="showResult(this.value)" ${ifnot:showname}disabled="disabled"${endif:showname}/>
-					<div id="livesearch"></div>
+					<input id="livesearch" type="text" name="name" size="50" class="username"  ${ifnot:showname}disabled="disabled"${endif:showname}/>
+					<div></div>
 				</td>
 			</tr>
 

@@ -24,8 +24,8 @@ session_start();
 require_once(dirname(__FILE__) . '/converter.php');
 require_once(dirname(__FILE__) . '/config.php');
 
-$version = '1.6.4';
-$jsver = "164";
+$version = '1.9.1';
+$jsver = "191";
 
 function myiconv($in_enc, $out_enc, $string)
 {

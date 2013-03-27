@@ -1,38 +1,32 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("/webim/data/ldap_users.xml");
+$xmlDoc->load("../data/ldap_users.xml");
 
-$x=$xmlDoc->getElementsByTagName('link');
+$x=$xmlDoc->getElementsByTagName('user');
 
 //get the q parameter from URL
-$q=$_GET["q"];
+$q=$_GET["term"];
 
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0)
 {
-$hint="";
+$hint="test1;test2";
 for($i=0; $i<($x->length); $i++)
   {
-  $y=$x->item($i)->getElementsByTagName('title');
-  $z=$x->item($i)->getElementsByTagName('url');
+  $y=$x->item($i)->getElementsByTagName('username');
+  $z=$x->item($i)->getElementsByTagName('email');
   if ($y->item(0)->nodeType==1)
     {
-    //find a link matching the search text
+    //Find a user matching the search text
     if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q))
       {
       if ($hint=="")
         {
-        $hint="<a href='" . 
-        $z->item(0)->childNodes->item(0)->nodeValue . 
-        "' target='_blank'>" . 
-        $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
+        $hint=$y->item(0)->childNodes->item(0)->nodeValue;
         }
       else
         {
-        $hint=$hint . "<br /><a href='" . 
-        $z->item(0)->childNodes->item(0)->nodeValue . 
-        "' target='_blank'>" . 
-        $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
+        $hint=$hint . " " . $y->item(0)->childNodes->item(0)->nodeValue;
         }
       }
     }
@@ -47,9 +41,9 @@ if ($hint=="")
   }
 else
   {
-  $response=$hint;
+  $response = explode(';', $hint);
   }
 
 //output the response
-echo $response;
+echo json_encode($response);
 ?>
