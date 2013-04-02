@@ -3,7 +3,7 @@
 
 $xml = simplexml_load_file('../data/ldap_users.xml');
 
-$str = $_POST['user'];
+$str = $_GET['term'];
 
 //if (strlen($str) > 1) {
 	$unameList = "";
@@ -13,7 +13,9 @@ $str = $_POST['user'];
 		$unameList = $unameList . "," . $user;
 	}
 	
-	echo $unameList;	
-//}
+	$unameList = trim($unameList, ",");
+	$unameList = explode(",", $unameList);
+	echo json_encode($unameList);	
+	//}
 
 ?>
