@@ -126,14 +126,14 @@ ${endif:groups}
 			<tr>
 				<td class="text">${msg:presurvey.name}</td>
 				<td>
-					<input id="livesearch" type="text" name="name" size="50" class="username" ${ifnot:showname}disabled="disabled"${endif:showname}/>
+					<input id="ldap_username" type="text" name="name" size="50" class="username" onblur="autoEmail()" ${ifnot:showname}disabled="disabled"${endif:showname}/>
 				</td>
 			</tr>
 
 ${if:showemail}
 			<tr>
 				<td class="text">${msg:presurvey.mail}</td>
-				<td><input type="text" name="email" size="50" value="${form:email}" class="username"/></td>
+				<td><input id="ldap_useremail" type="text" name="email" size="50" value="${form:email}" class="username"/></td>
 			</tr>
 ${endif:showemail}
 			

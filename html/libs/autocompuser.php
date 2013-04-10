@@ -7,7 +7,7 @@ $str = $_GET['term'];
 $unameList = "";
 
 // Lager en CSV med brukernavn
-$unames = $xml->xpath("/tromkom/user/username[contains(text(), '$str')]");
+$unames = $xml->xpath("/tromkom/user/username[starts-with(text(), '$str')]");
 foreach ($unames as $user) {
 	$unameList = $unameList . "," . $user;
 }
