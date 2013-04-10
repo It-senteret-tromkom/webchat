@@ -1,14 +1,14 @@
 <?php
-$xml = simplexml_load_file('../data/ldap_users.xml');
+$xmlfile = '../data/ldap_users.xml';
+$xmlstring = file_get_contents($xmlfile);
+$xml = new SimpleXMLElement($xmlstring);
 
-// Mottar tekst det skal søkes etter fra jQuery
-$str = $_GET['term'];
+// Mottar tekst det skal søkes etter
+$str = $_GET['uname'];
 
-// Lager en CSV med epost
-$uname = $xml->xpath("/tromkom/user/username[start-with(text(), '$str')]");
+$useremail = $xml->xpath('//user[name="'.$str.'"]/email/text()');
 
-$test = "fjopps";
-
-echo $test;
+echo reset($useremail);
+//echo '//user[name="'.$str.'"]/email/text()';
 
 ?>
