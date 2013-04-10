@@ -133,7 +133,8 @@ ${endif:groups}
 ${if:showemail}
 			<tr>
 				<td class="text">${msg:presurvey.mail}</td>
-				<td><input id="ldap_useremail" type="text" name="email" size="50" value="${form:email}" class="username"/></td>
+				<td><input disabled id="ldap_useremail" type="text" name="email" size="50" value="${form:email}" class="username"/></td>
+				<div id="error"></div>
 			</tr>
 ${endif:showemail}
 			
