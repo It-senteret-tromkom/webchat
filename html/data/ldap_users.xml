@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <tromkom>
 	<user>
-		<username>test0</username>
+		<name>test0</name>
 		<email>test0@epost.no</email>
 	</user>
 	<user>
-		<username>test1</username>
+		<name>test1</name>
 		<email>test1@epost.no</email>
 	</user>
 	<user>
-		<username>test2</username>
+		<name>test2</name>
 		<email>test2@epost.no</email>
 	</user>
 	<user>
-		<username>test3</username>
+		<name>test3</name>
 		<email>test3@epost.no</email>
 	</user>
 	<user>
-		<username>test4</username>
+		<name>test4</name>
 		<email>test4@epost.no</email>
 	</user>
 	<user>
-		<username>test5</username>
+		<name>test5</name>
 		<email>test5@epost.no</email>
 	</user>
 	<user>
-		<username>test6</username>
+		<name>test6</name>
 		<email>test6@epost.no</email>
 	</user>
 	<user>
-		<username>test7</username>
+		<name>test7</name>
 		<email>test7@epost.no</email>
 	</user>
 	<user>
-		<username>test8</username>
+		<name>test8</name>
 		<email>test8@epost.no</email>
 	</user>
 	<user>
-		<username>test9</username>
+		<name>test9</name>
 		<email>test9@epost.no</email>
 	</user>
 	<user>
-		<username>test10</username>
+		<name>test10</name>
 		<email>test10@epost.no</email>
 	</user>
 	<user>
-		<username>test11</username>
+		<name>test11</name>
 		<email>test11@epost.no</email>
 	</user>
 	<user>
-		<username>test12</username>
+		<name>test12</name>
 		<email>test12@epost.no</email>
 	</user>
 	<user>
-		<username>test13</username>
+		<name>test13</name>
 		<email>test13@epost.no</email>
 	</user>
 	<user>
-		<username>test14</username>
+		<name>test14</name>
 		<email>test14@epost.no</email>
 	</user>
 	<user>
-		<username>test15</username>
+		<name>test15</name>
 		<email>test15@epost.no</email>
 	</user>
 	<user>
-		<username>test16</username>
+		<name>test16</name>
 		<email>test16@epost.no</email>
 	</user>
 	<user>
-		<username>test17</username>
+		<name>test17</name>
 		<email>test17@epost.no</email>
 	</user>
 	<user>
-		<username>test18</username>
+		<name>test18</name>
 		<email>test18@epost.no</email>
 	</user>
 	<user>
-		<username>test19</username>
+		<name>test19</name>
 		<email>test19@epost.no</email>
 	</user>
 	<user>
-		<username>test20</username>
+		<name>test20</name>
 		<email>test20@epost.no</email>
 	</user>
 	<user>
-		<username>test21</username>
+		<name>test21</name>
 		<email>test21@epost.no</email>
 	</user>
 </tromkom>
