@@ -126,6 +126,7 @@ ${endif:groups}
 			<tr>
 				<td class="text">${msg:presurvey.name}</td>
 				<td>
+				    <!-- Når dette tekstfeltet mister fokus (onblur) kjøres javascriptet som henter tilhørende epostadresse -->
 					<input id="ldap_username" type="text" name="name" size="50" class="username" onblur="autoEmail()" ${ifnot:showname}disabled="disabled"${endif:showname}/>
 				</td>
 			</tr>
@@ -133,6 +134,7 @@ ${endif:groups}
 ${if:showemail}
 			<tr>
 				<td class="text">${msg:presurvey.mail}</td>
+				<!-- Epost tekstfeltet er ikke mulig å endre for bruker (disabled) -->
 				<td><input disabled id="ldap_useremail" type="text" name="email" size="50" value="${form:email}" class="username"/></td>
 				<div id="error"></div>
 			</tr>

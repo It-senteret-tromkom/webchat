@@ -1,6 +1,6 @@
 <?php
+// xml fila som inneholder info om brukere (brukernav, epost, etc)
 $xml = simplexml_load_file('../data/ldap_users.xml');
-
 // Mottar tekst det skal søkes etter fra jQuery
 $str = $_GET['term'];
 
@@ -16,6 +16,6 @@ foreach ($unames as $user) {
 $unameList = trim($unameList, ",");
 // Lager et array av teksten
 $unameList = explode(",", $unameList);
+// Leverer resultat av søk i JSON format (slik at javascriptet kan bruke dataene)
 echo json_encode($unameList);	
-
 ?>
